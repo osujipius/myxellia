@@ -11,6 +11,7 @@ import Image from "next/image";
 import DrawerTop from "./Drawer";
 import MenuDropdown from "./MenuDropdown";
 import Calendar from "react-calendar";
+import Link from "next/link";
 
 export default function Header() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -29,7 +30,10 @@ export default function Header() {
         color="white"
       >
         <Flex alignItems="center">
-          <Image src="/assests/logo.svg" width={165} height={38} />
+          <Link href={"/"} passHref>
+            <Image src="/assests/logo.svg" width={165} height={38} />
+          </Link>
+
           <Spacer />
           <Flex gap={7}>
             <ButtonGroup spacing={2}>

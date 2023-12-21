@@ -33,7 +33,12 @@ const NavItem = ({ href, name, icon }) => {
 
 export default function Navigation() {
   return (
-    <Box className="container-main" h={67} bg="white">
+    <Box
+      className="container-main"
+      h={67}
+      bg="white"
+      boxShadow={"0px 4px 8px 0px rgba(0, 0, 0, 0.02)"}
+    >
       <Flex
         alignItems={"center"}
         height="100%"
